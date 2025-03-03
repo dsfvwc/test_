@@ -266,8 +266,7 @@
 
 
         <section class="footer-soc-section">
-            <h2 class="visually-hidden">Соціальні мережі</h2>
-        <p class="footer-soc-title">приєднуйтесь</p>
+        <h2 class="footer-soc-title">ПРИЄДНУЙТЕСЬ</h2>
         <ul class="footer-soc-list list">
             <li>
                 <a href="" class="footer-soc-link">
@@ -299,6 +298,21 @@
             </li>
         </ul>
         </section>
+
+
+        <section class="footer-newsletter">
+            <form action="">
+                <label for="name">
+            <h2 class="footer-newsletter-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h2>
+                </label>
+                <input placeholder="E-mail" type="email" name="email" id="name" class="footer-newsletter-window">
+                <button type="submit" class="footer-btn">Підписатися
+                    <svg class="icon-newsletter" width="24" height="24"><use href="./images/icons.svg#icon-newsletter"></use>
+                    </svg>
+                </button>
+            </form>
+    </address>
+        </section>
     </div>
     </div>
     </footer>
@@ -308,13 +322,68 @@
     <div class="backdrop is-hidden" data-modal data-aos="fade-down">
         <div class="modal">
             <button data-modal-close type="button" class="modal-close-btn">X</button>
+            <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+            <form>
+                <label class="modal-label">Ім'я
+                    <div class="modal-input-wrap">
+                <input 
+                type="text" 
+                name="user-name" 
+                required 
+                minlength="2" 
+                class="modal-input">
+                <svg class="input-icon" weight="18" height="18">
+                    <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+            </div>
+            </label>
+            <label class="modal-label">Телефон
+                <div class="modal-input-wrap">
+            <input 
+                type="tel" 
+                name="user-tel" 
+                required
+                pattern="[\+]\d{3}[\(]\d{2}[\)]\d{3}[\-]\d{2}[\-]\d{2}"
+                title="+380(93)111-11-11"
+                class="modal-input">
+                <svg class="input-icon" weight="18" height="18">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                </div>
+                </label>
+                <label class="modal-label">Пошта
+                    <div class="modal-input-wrap">
+                <input 
+                type="email" 
+                name="user-email" 
+                required 
+                class="modal-input">
+                <svg class="input-icon" weight="18" height="18">
+                    <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+                </div>
+                </label>
+                <label class="modal-label">Коментар
+                    <div class="modal-input-wrap">
+                    <textarea 
+                    name="user-text" 
+                    id="user-text" 
+                    placeholder="Введіть текст" 
+                    class="modal-comment"></textarea>
+                    </div>
+                </label>
+                <label class="modal-contract">
+                <input type="checkbox">Погоджуюся з розсилкою та приймаю <a href=""> Умови договору</a>
+            </label>
+            <button type="submit" class="submit">Відправити</button>
+        </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
-        </script>
+    AOS.init();
+    </script>
 </body>
 </html>
