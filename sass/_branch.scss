@@ -1,0 +1,41 @@
+.branch {
+    padding-bottom: 94px;
+    h2 {
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--portfolio-secondary-text-color);
+}
+}
+
+.branch__list {
+    display: flex;
+}
+
+.branch__img {
+    margin-right: 30px;
+}
+
+.branch__conteiner {
+    position: relative;
+}
+
+.branch-card__title {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+}

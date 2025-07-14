@@ -1,0 +1,150 @@
+.footer-color {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--footer-backgraund);
+}
+
+.footer-logo-web {
+    font-family: Raleway, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    line-height: 1.17;
+    text-align: left;
+    color: var(--accent-color);
+}
+
+.footer-logo-studio {
+    font-family: Raleway, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    line-height: 1.17;
+    text-align: left;
+    color: var(--light-color);
+}
+
+.footer-address {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;
+    font-style: normal;
+    color: var(--footer-address);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+}
+}
+
+.footer-mail, .footer-tel {
+    display: inline-block;
+    margin-top: 9px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;
+    font-style: normal;
+    color: var(--footer-mail-tel);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+}
+}
+
+.contact-wrap .conteiner {
+    display: flex;
+}
+
+.footer-soc-title,
+.footer-newsletter-title {
+    font-family: Roboto, Tahoma, sans-serif; 
+    font-size: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-contacts {
+    margin-right: 70px;
+}
+
+.footer-soc-list {
+    margin-top: 20px;
+    display: flex;
+}
+
+.footer-soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, 
+    &:focus {
+    background-color: var(--accent-color);
+}
+}
+
+.footer-soc-icon {
+    fill: var(--light-color);
+}
+
+.footer-soc-list li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-newsletter {
+    margin-left: 93px;
+}
+
+.footer-newsletter-window {
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    margin-right: 12px;
+    padding-top: 15px;
+    padding-left: 16px;
+    padding-bottom: 15px;
+
+    border-radius: 4px;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+}
+
+.footer-btn {
+    display: inline-flex;
+    padding: 10px 28px 10px 30.5px;
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.86;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--light-color);
+    background-color: rgb(33, 150, 243);
+    border-radius: 4px;
+    border: 0;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+}
+
+.icon-newsletter {
+    justify-content: center;
+    align-items: center;
+    fill: currentColor;
+    margin-left: 12.5px;
+}
