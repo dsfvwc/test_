@@ -1,39 +1,78 @@
 .main { 
     background-color: var(--main-background);
 
+    @media screen and (min-width: 480px) {
+    padding: 118px 0 118px 0;
+    }
+    @media screen and (min-width: 768px) {
+    padding: 118px 0 118px 0;
+    }
+    @media screen and (min-width: 1200px) {
     padding: 200px 0 200px 0;
+    }
 }
 
 .overlay {
-    max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (min-width: 480px) {
+    max-width: 480px;
+    height: 400px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+    url(../images/header-img-480.jpg);
+    }
+    @media screen and (min-width: 768px) {
+    max-width: 768px;
+    height: 400px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+    url(../images/header-img-768.jpg);
+    }
+    @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
     url(../images/background-img.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    }
 }
 
 .main-title {
     margin-bottom: 30px;
 
     font-family: Roboto;
-    font-size: 44px;
     font-weight: 900;
-    line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
     color: var(--light-color);
+
+    @media screen and (min-width: 480px) {
+    font-size: 26px;
+    line-height: 1.62;
+    }
+    @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.62;
+    }
+    @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    }
 }
 
 .main-btn {
-    padding: 10px 32px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -49,4 +88,14 @@
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: 0;
+
+    @media screen and (min-width: 480px) {
+    padding: 10px 24px;
+    }
+    @media screen and (min-width: 768px) {
+    padding: 10px 24px;
+    }
+    @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
+    }
 }
