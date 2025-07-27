@@ -18,9 +18,14 @@
     <title>WebStudio</title>
 </head>
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="conteiner">
             <a href="" class="link"><span class="header-logo-web" lang="en">Web</span><span class="header-logo-studio" lang="en">Studio</span></a>
+            <button type="button" class="icon-menu-open cursor">
+<svg class="icon-menu" width="40" height="40">
+    <use href="./images/icons.svg#icon-menu"></use>
+</svg>
+        </button>
         <nav class="header-nav">
         <ul class="list site-nav">
             <li class="site-nav__item"><a href="" class="site-nav__link link current">Студія</a></li>
@@ -46,7 +51,44 @@
             </ul>
         </div>
         </div>
-    </header> -->
+        <div class="mob-menu is-hidden">
+            <div class="conteiner">
+                
+            <button type="button" class="icon-menu-close cursor">
+<svg class="icon-menu" width="18.67px" height="18.67px">
+    <use href="./images/icons.svg#icon-close"></use>
+</svg>
+        </button>
+        <div class="mob-menu-top">
+        <ul class="list site-nav-mob">
+            <li class="site-nav-mob__item"><a href="" class="site-nav-mob__link link current">Студія</a></li>
+            <li class="site-nav-mob__item"><a href="./portfolio.html" class="site-nav-mob__link link page">Портфоліо</a></li>
+            <li class="site-nav-mob__item"><a href="" class="site-nav-mob__link link page">Контакти</a></li>
+        </ul>
+        </div>
+        <div class="mob-menu-bottom">
+        <div class="header-connect-mob">
+            <ul class="list">
+                <li class="site-nav-mob__iteam">
+                    <a href="tel:+380961111111"  class="site-nav-mob__tel site-nav-mob__link link">+38 096 111 11 11</a>
+                </li>
+            </ul>
+            <ul class="list">
+                <li class="site-nav-mob__iteam">
+                    <a href="mailto:info@devstudio.com" class="site-nav-mob__mail site-nav-mob__link link">info@devstudio.com</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mob-soc-list">
+            <a href="" class="link link_Instagram">Instagram</a><span class="divider"></span>
+            <a href="" class="link link_Twitter">Twitter</a><span class="divider"></span>
+            <a href="" class="link link_Facebook">Facebook</a><span class="divider"></span>
+            <a href="" class="link link_LinkedIn">LinkedIn</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </header>
     <main>
         <section class="main overlay">
             <div class="conteiner">
@@ -96,7 +138,7 @@
                 <ul class="branch__list list">
                 <li class="branch__img">
                     <div class="branch__conteiner">
-                        <img width="370" src="./images/box1.jpg" alt="десктопні додатки">
+                        <img srcset="./images/box1.jpg 1x, ./images/box1-2x.jpeg 2x" width="370" src="./images/box1.jpg" alt="десктопні додатки">
                         <div class="branch-card">
                             <p class="branch-card__title">ДЕСКТОПНІ ДОДАТКИ</p>
                         </div>
@@ -104,7 +146,7 @@
                 </li>
                 <li class="branch__img">
                     <div class="branch__conteiner">
-                        <img width="370" src="./images/box2.jpg" alt="мобільні додатки">
+                        <img srcset="./images/box2.jpg 1x, ./images/box2-2x.jpeg 2x" width="370" src="./images/box2.jpg" alt="мобільні додатки">
                         <div class="branch-card">
                             <p class="branch-card__title">МОБІЛЬНІ ДОДАТКИ</p>
                         </div>
@@ -112,7 +154,7 @@
                 </li>
                 <li class="branch__img">
                     <div class="branch__conteiner">
-                        <img width="370" src="./images/box3.jpg" alt="дизайнерські рішення">
+                        <img srcset="./images/box3.jpg 1x, ./images/box3-2x.jpeg 2x" width="370" src="./images/box3.jpg" alt="дизайнерські рішення">
                         <div class="branch-card">
                             <p class="branch-card__title">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
                         </div>
@@ -126,7 +168,19 @@
             <h2>Наша команда</h2>
             <ul class="team__list list">
             <li class="team__item">
-                <img width="270" src="./images/photo1.jpg" alt="Дизайнер продукту">
+                <!-- <picture>
+                    <source srcset="./images/photo1.jpg 1x, ./images/photo1-2x.jpeg 2x"
+                    media="(min-width:1200px)">
+                </picture>
+                <picture>
+                    <source srcset="./images/photo1-tablet.jpeg 1x, ./images/photo1-tablet.jpeg 2x"
+                    media="(min-width:768px)">
+                </picture>
+                <picture>
+                    <source srcset="./images/photo1-mobile.jpeg 1x, ./images/photo1-mobile-2x.jpeg 2x"
+                    media="(min-width:320px)">
+                </picture> -->
+                <img srcset="./images/photo1.jpg 1x, ./images/photo1-2x.jpeg 2x" width="270" src="./images/photo1.jpg" alt="Дизайнер продукту">
                 <h3 class="team-item__surname">Ігор Дем'яненко</h3>
                 <p lang="en" class="team-item__position">Product Designer</p>
                 <ul class="team-soc-list list">
@@ -145,7 +199,7 @@
                 </ul>
             </li>
             <li class="team__item">
-                <img width="270" src="./images/photo2.jpg" alt="Фронтенд-розробник">
+                <img srcset="./images/photo2.jpg 1x, ./images/photo2-2x.jpeg 2x" width="270" src="./images/photo2.jpg" alt="Фронтенд-розробник">
                 <h3 class="team-item__surname">Ольга Рєпіна</h3>
                 <p lang="en" class="team-item__position">Frontend Developer</p>
                 <ul class="team-soc-list list">
@@ -164,7 +218,7 @@
                 </ul>
             </li>
             <li class="team__item">
-                <img width="270" src="./images/photo3.jpg" alt="Маркетолог">
+                <img srcset="./images/photo3.jpg 1x, ./images/photo3-2x.jpeg 2x" width="270" src="./images/photo3.jpg" alt="Маркетолог">
                 <h3 class="team-item__surname">Микола Тарасов</h3>
                 <p lang="en" class="team-item__position">Marketing</p>
                 <ul class="team-soc-list list">
@@ -183,7 +237,7 @@
                 </ul>
             </li>
             <li class="team__item">
-                <img width="270" src="./images/photo4.jpg" alt="Дизайнер інтерфейсу користувача">
+                <img srcset="./images/photo4.jpg 1x, ./images/photo4-2x.jpeg 2x" width="270" src="./images/photo4.jpg" alt="Дизайнер інтерфейсу користувача">
                 <h3 class="team-item__surname">Михайло Єрмаков</h3>
                 <p lang="en" class="team-item__position">UI Designer</p>
                 <ul class="team-soc-list list">
@@ -242,7 +296,7 @@
             </div>
         </section>
     </main>
-    <!-- <footer class="footer-color">
+    <footer class="footer-color">
         <div class="contact-wrap">
         <div class="conteiner">
             <section class="footer-contacts">
@@ -309,13 +363,17 @@
         </section>
     </div>
     </div>
-    </footer> -->
+    </footer>
     
 
 
-    <div class="backdrop is-hidden" data-modal data-aos="fade-down">
+    <!-- <div class="backdrop is-hidden" data-modal data-aos="fade-down">
         <div class="modal">
-            <button data-modal-close type="button" class="modal-close-btn">X</button>
+            <button type="button" class="modal-close-btn cursor" data-modal-close>
+<svg class="x-icon" width="11" height="11">
+    <use xlink:href="./images/icons.svg#icon-close"></use>
+</svg>
+        </button>
             <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
             <form>
                 <div class="modal-field">
@@ -390,10 +448,12 @@
             <button type="submit" class="submit">Відправити</button>
         </form>
         </div>
-    </div>
+    </div> -->
 
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

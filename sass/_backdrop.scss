@@ -34,6 +34,16 @@
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
     border: 1px	solid rgba(0, 0, 0, 0.1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover .x-icon,
+    &:focus .x-icon {
+    fill: var(--accent-text-color);
+    }
+}
+
+.x-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #000;
 }
 
 .is-hidden {
