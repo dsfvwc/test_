@@ -680,6 +680,11 @@ img {
 .branch__img {
   margin-right: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .branch__img:last-child {
+    margin-right: 0;
+  }
+}
 
 .branch__conteiner {
   position: relative;

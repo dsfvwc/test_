@@ -25,6 +25,12 @@
 
 .branch__img {
     margin-right: 30px;
+
+    @media screen and (min-width: 1200px) {
+    &:last-child {
+    margin-right: 0;
+    }
+}
 }
 
 .branch__conteiner {
