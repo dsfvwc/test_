@@ -2,7 +2,13 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background: var(--footer-backgraund);
+    display: none;
+
+@media screen and (min-width: 1200px) {
+    display: block;
+    }
 }
+
 
 .footer-logo-web {
     font-family: Raleway, Tahoma, sans-serif;
@@ -68,7 +74,7 @@
 .footer-soc-title,
 .footer-newsletter-title {
     font-family: Roboto, Tahoma, sans-serif; 
-    font-size: 700;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -153,7 +159,7 @@
     border-radius: 4px;
     border: 0;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-newsletter {
