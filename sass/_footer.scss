@@ -2,7 +2,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background: var(--footer-backgraund);
-    display: none;
+    // display: none;
 
 @media screen and (min-width: 1200px) {
     display: block;
@@ -47,7 +47,7 @@
 
 .footer-mail, .footer-tel {
     display: inline-block;
-    margin-top: 9px;
+    margin-top: 8px;
 
     font-size: 14px;
     font-weight: 400;
@@ -58,6 +58,10 @@
     color: var(--footer-mail-tel);
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+    margin-top: 9px;
+    }
 }
 
 .footer-address:hover,
@@ -70,20 +74,38 @@
 }
 
 .contact-wrap .conteiner {
-    display: flex;
+    display: block;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .footer-soc-title,
 .footer-newsletter-title {
     font-family: Roboto, Tahoma, sans-serif; 
-    font-size: 700;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align: center;
     color: rgb(255, 255, 255);
-    margin-top: 15px;
+    margin-top: 60px;
     margin-bottom: 20px;
+    
+    @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-top: 0;
+    }
+}
+
+.footer-soc-title {
+    @media screen and (min-width: 768px) {
+    margin-top: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    }
 }
 
 .footer-soc-sectio {
@@ -91,12 +113,25 @@
 }
 
 .footer-contacts {
+    @media screen and (max-width: 1199.98px) {
+    text-align: center;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin-left: 76px;
+    }
+    @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    }
 }
 
 .footer-soc-list {
     margin-top: 20px;
     display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+    justify-content: left;
+    }
 }
 
 .footer-soc-link {
@@ -125,14 +160,17 @@
 }
 
 .footer-newsletter {
+    
+
+    @media screen and (min-width: 1200px) {
     margin-left: 93px;
+    }
 }
 
 .footer-newsletter-window {
-    width: 358px;
+    width: 100%;
     height: 50px;
     background-color: transparent;
-    margin-right: 12px;
     padding-top: 15px;
     padding-left: 16px;
     padding-bottom: 15px;
@@ -140,10 +178,22 @@
     border-radius: 4px;
     border: 1px solid rgb(255, 255, 255, 0.3);
     /* transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    }
 }
 
 .footer-btn {
-    display: inline-flex;
+    display: block;
     padding: 10px 28px 10px 30.5px;
 
     font-family: inherit;
@@ -157,7 +207,30 @@
     border-radius: 4px;
     border: 0;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+    @media screen and (min-width: 1200px) {
+    margin: 0;
+    display: inline-flex;
+    }
+}
+
+.footer-wrapper {
+    display: block;
+
+    @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    }
+}
+
+.footer-soc-section {
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin-right: 89px;
+    }
 }
 
 .icon-newsletter {
@@ -168,6 +241,10 @@
 }
 
 .footer-newsletter form {
-    display: flex;
+    display: block;
     align-items: center;
+
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    }
 }
