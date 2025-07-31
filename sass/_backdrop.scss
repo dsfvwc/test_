@@ -10,8 +10,8 @@
 }
 
 .modal {
-    width: 528px;
-    min-height: 581px;
+    width: 290px;
+    min-height: 609px;
     padding: 40px;
     background-color: rgb(255, 255, 255);
     border-radius: 4px;
@@ -23,6 +23,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media screen and (min-width: 480px) {
+    width: 450px;
+    // min-height: 609px;
+    }
+    @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+    }
 }
 
 .modal-close-btn {
@@ -56,10 +65,15 @@
     font-weight: 700;
     letter-spacing: 0.03em;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     color: var(--studio-secondary-text-color);
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 1200px) {
+    line-height: 1.15;
     margin-bottom: 11px;
+    }
 }
 
 .modal-input {
@@ -105,6 +119,16 @@
     margin-top: 4px;
     resize: none;
     outline: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.01em;
+
+    @media screen and (min-width: 1200px) {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    }
+
     &:focus,
     &:hover {
     border-color: var(--accent-color);
@@ -150,18 +174,25 @@
     align-items: center;
 }
 
-.contract {
-    font-size: 14px;
-    line-height: 1.71;
+.contract,
+.link-contract {
+    font-size: 10px;
+    line-height: calc(14 / 10);
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     margin-left: 8px;
+
+    @media screen and (min-width: 480px) {
+    font-size: 12px;
+    line-height: 1px;
+    }
+    @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    }
 }
 
 .link-contract {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
     color: var(--accent-color);
     margin-left: 5px;
 }
